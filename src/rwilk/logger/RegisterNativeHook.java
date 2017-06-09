@@ -7,11 +7,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Created by wilkr on 02.05.2017.
- * RegisterNativeHook
+ * Created by Rafal Wilk
  */
 public class RegisterNativeHook {
 
+    /**
+     * Rejestrowanie NativeHook'a. Metoda tworzy i uruchamia sluchaczy zdarzen od myszki i klawiatury.
+     */
     public static void registerNativeHook(){
         Logger loggerListener = Logger.getLogger(GlobalScreen.class.getPackage().getName());
         loggerListener.setLevel(Level.OFF);

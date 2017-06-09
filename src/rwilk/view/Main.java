@@ -5,9 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import rwilk.logger.RegisterNativeHook;
 
 /**
- * Glowna klasa programu.
+ * Created by Rafal Wilk
  */
 public class Main extends Application {
 
@@ -19,8 +20,13 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-
+    /**
+     * Glowna klasa programu.
+     * Rejestrujemy sluchasza zdarzen i wystwietlamy okno.
+     * @param args argumenty
+     */
     public static void main(String[] args) {
+        RegisterNativeHook.registerNativeHook();
         launch(args);
     }
 }

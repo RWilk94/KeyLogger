@@ -2,29 +2,42 @@ package rwilk.logger;
 
 import org.jnativehook.mouse.NativeMouseEvent;
 import org.jnativehook.mouse.NativeMouseInputListener;
+import rwilk.view.ImageSettings;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
- * Created by wilkr on 25.04.2017.
- * Klasa powinna implementować myszke
+ * Created by Rafal Wilk
  */
 public class GlobalMouseListener implements NativeMouseInputListener {
 
-    //Z myszki to przechwytuje tylko klikniecie. I robie screenshot. Nie zapisuje tego nigdzie.
-
-    private static final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS");
     private static final DateFormat dateFormatForPath = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss-SSS");
 
+    /**
+     * Metoda wywolywana w momencie klikniecia myszka.
+     *
+     * @param e zdarzenie od myszki
+     */
     public void nativeMouseClicked(NativeMouseEvent e) {
     }
 
-    //robi screenshoty przy kliknieciu
+    /**
+     * Metoda wywoluje sie w momencie nacisniecia przyciskow myszki.
+     *
+     * @param e zdarzenie od myszki
+     */
     public void nativeMousePressed(NativeMouseEvent e) {
-        /*try {
+        try {
             Calendar calendar = Calendar.getInstance();
-            Date date =  calendar.getTime(); //zapamietujemy czas, zeby byl taki sam w nazwie screenShota
+            Date date = calendar.getTime(); //zapamietujemy czas, zeby byl taki sam w nazwie screenShota
 
             //robimy screenShot wszystkich ekranow, ktore sa do komputera podlaczone
             Rectangle screenRect = new Rectangle(0, 0, 0, 0);
@@ -35,34 +48,41 @@ public class GlobalMouseListener implements NativeMouseInputListener {
 
             Image cursor = null; //rysujemy obraz myszki
             try {
-                //cursor = ImageIO.read(new File("pointer.png"));
                 cursor = ImageIO.read(GlobalMouseListener.class.getResourceAsStream("pointer.png"));
-
-                //URI
-               // DocFlavor.URL url = new DocFlavor.URL("../resources/pointer.png");
-
             } catch (IOException ioe) {
                 ioe.printStackTrace();
             }
-            int x = MouseInfo.getPointerInfo().getLocation().x; //pozycja myszki
+            int x = MouseInfo.getPointerInfo().getLocation().x;
             int y = MouseInfo.getPointerInfo().getLocation().y;
-            Graphics2D g = capture.createGraphics();  //wstawiamy obrazek myszki
-            if(cursor != null)g.drawImage(cursor,x,y,16,16,null);
-            //zapisujemy
-            ImageIO.write(capture, "JPG", new File(ImagesSettings.readFile() + "\\" + dateFormatForPath.format(date) + ".jpg"));
-        }catch (Exception ex){
+            Graphics2D g = capture.createGraphics();
+            if (cursor != null) g.drawImage(cursor, x, y, 16, 16, null);
+            ImageIO.write(capture, "JPG", new File(ImageSettings.readFile() + "\\" + dateFormatForPath.format(date) + ".jpg"));
+        } catch (Exception ex) {
             ex.printStackTrace();
-        }*/
+        }
     }
 
+    /**
+     * Metoda wywolywana w momencie puszczenia przyciskow myszki.
+     *
+     * @param e zdarzenie od myszki
+     */
     public void nativeMouseReleased(NativeMouseEvent e) {
     }
 
-    //ruch myszki
+    /**
+     * Metoda wywolana w momencie ruchu myszka.
+     *
+     * @param e zdarzenie od myszki
+     */
     public void nativeMouseMoved(NativeMouseEvent e) {
     }
 
-    //przeciaganie
+    /**
+     * Metoda wywolywana w momencie przeciagania myszka.
+     *
+     * @param e zdarzenie od myszki
+     */
     public void nativeMouseDragged(NativeMouseEvent e) {
     }
 }

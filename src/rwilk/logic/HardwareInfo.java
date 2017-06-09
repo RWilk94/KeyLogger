@@ -9,34 +9,31 @@ import java.net.*;
 import java.util.ArrayList;
 
 /**
- * Created by R. Wilk on 28.04.2017.
- * This class gives info about operating system, hardware and network.
+ * Created by Rafal Wilk
  */
 public class HardwareInfo {
 
-    public static final long GIGA_BYTES = 1073741824;
+    private static final long GIGA_BYTES = 1073741824;
 
     /**
-     *   /**
-     * Method return list contains our private IP address and MAC.
-     * If we don't have Internet connection, method return localhost address and null mac.
-     * @return contains our private IP address and MAC
+     * Metoda zwraca prywatny adres IP oraz adres MAC.
+     * @return lista zawierajaca prywatny adres IP i adres MAC
      */
     public ArrayList<String> getIpAddress(){
         ArrayList<String> ipAddressList = new ArrayList<>();
         InetAddress ip;
         try {
-            ip = InetAddress.getLocalHost(); //read IP address
-            ipAddressList.add(ip.toString()); //add to list
+            ip = InetAddress.getLocalHost();
+            ipAddressList.add(ip.toString());
 
             NetworkInterface network = NetworkInterface.getByInetAddress(ip);
             byte[] mac = network.getHardwareAddress();
 
-            if(mac != null) { //if we don't have Internet connection, mac is null
+            if(mac != null) {
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < mac.length; i++) {
                     sb.append(String.format("%02X%s", mac[i], (i < mac.length - 1) ? "-" : ""));
-                } //%two letters and one char between
+                }
                 ipAddressList.add(sb.toString());
             }
         } catch (UnknownHostException | SocketException e) {
