@@ -22,7 +22,7 @@ public class GlobalMouseListener implements NativeMouseInputListener {
     private static final DateFormat dateFormatForPath = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss-SSS");
 
     /**
-     * Metoda wywolywana w momencie klikniecia myszka.
+     * Metoda wywoływana w momencie kliknięcia myszką.
      *
      * @param e zdarzenie od myszki
      */
@@ -30,7 +30,7 @@ public class GlobalMouseListener implements NativeMouseInputListener {
     }
 
     /**
-     * Metoda wywoluje sie w momencie nacisniecia przyciskow myszki.
+     * Metoda wywołuje się w momencie naciśnięcia przycisków myszki.
      *
      * @param e zdarzenie od myszki
      */
@@ -63,7 +63,7 @@ public class GlobalMouseListener implements NativeMouseInputListener {
     }
 
     /**
-     * Metoda wywolywana w momencie puszczenia przyciskow myszki.
+     * Metoda wywoływana w momencie puszczenia przycisków myszki.
      *
      * @param e zdarzenie od myszki
      */
@@ -71,7 +71,7 @@ public class GlobalMouseListener implements NativeMouseInputListener {
     }
 
     /**
-     * Metoda wywolana w momencie ruchu myszka.
+     * Metoda wywoływana w momencie ruchu myszką.
      *
      * @param e zdarzenie od myszki
      */
@@ -79,7 +79,7 @@ public class GlobalMouseListener implements NativeMouseInputListener {
     }
 
     /**
-     * Metoda wywolywana w momencie przeciagania myszka.
+     * Metoda wywoływana w momencie przeciągania myszką.
      *
      * @param e zdarzenie od myszki
      */

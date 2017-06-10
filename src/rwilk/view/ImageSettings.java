@@ -14,7 +14,7 @@ import rwilk.logic.FileOperations;
 import java.io.File;
 
 /**
- * Created by Rafal Wilk
+ * Created by Rafał Wilk
  */
 public class ImageSettings {
 
@@ -23,6 +23,10 @@ public class ImageSettings {
     private static TextField path = new TextField();
     private static Stage window;
 
+    /**
+     * Metoda wyświetla graficzne okno ustawień zdjeć, screenshotów.
+     * Możemy ustawić ścieżkę do folderu, w którym będziemy zapisywać screenshoty.
+     */
     public static void display() {
         window = new Stage();
 
@@ -53,6 +57,9 @@ public class ImageSettings {
         window.showAndWait();
     }
 
+    /**
+     * Metoda uruchamia okienko wyboru folderu, gdzie będziemy zapisywać screenshoty.
+     */
     private static void pathImageChosen() {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("Choose where saves screenshot...");
@@ -67,11 +74,13 @@ public class ImageSettings {
             FileOperations.writeToFile("image.txt", filePath);
         } catch (NullPointerException nex) {
             System.out.println("ImagesSettings + pathChosen = ERROR");
-            //logger.error("Main + pathChosen ");
         }
-        //path.setText(FileOperations.readFile("image.txt"));
     }
 
+    /**
+     * Metoda wczytuje z pliku scieżkę, gdzie zapisujemy screenshoty.
+     * @return ścieżka do katalogu, gdzie program zapisuje screenshoty.
+     */
     public static String readFile(){
         String pathFromFile = FileOperations.readFile("image.txt");
         path.setText(pathFromFile);

@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class RegisterNativeHook {
 
     /**
-     * Rejestrowanie NativeHook'a. Metoda tworzy i uruchamia sluchaczy zdarzen od myszki i klawiatury.
+     * Rejestrowanie NativeHook'a. Metoda tworzy i uruchamia słuchaczy zdarzeń od myszki i klawiatury.
      */
     public static void registerNativeHook(){
         Logger loggerListener = Logger.getLogger(GlobalScreen.class.getPackage().getName());

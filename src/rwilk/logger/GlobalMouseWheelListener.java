@@ -21,8 +21,8 @@ public class GlobalMouseWheelListener implements NativeMouseWheelListener {
     private static final DateFormat dateFormatForPath = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss-SSS");
 
     /**
-     * Metoda wywolana w momencie przesuwania kolkiem od myszki.
-     * Robiony jest screenshot wszystkich ekranow.
+     * Metoda wywoływana w momencie przesuwania kółkiem od myszki.
+     * Robiony jest screenshot wszystkich ekranów.
      *
      * @param e zdarzenie od myszki
      */

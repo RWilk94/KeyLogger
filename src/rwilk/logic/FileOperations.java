@@ -9,10 +9,10 @@ public class FileOperations {
 
     /**
      * Metoda dopisuje do pliku.
-     * Jesli nie ma pliku, program tworzy nowy plik i zapisuje do niego.
+     * Jeśli nie ma pliku, program tworzy nowy plik i zapisuje do niego.
      *
-     * @param file sciezka do pliku
-     * @param text tekst, ktory chcemy dopisac
+     * @param file scieżka do pliku
+     * @param text tekst, który chcemy dopisać
      */
     public static void writeToFile(String file, String text) {
         try {
@@ -25,9 +25,9 @@ public class FileOperations {
     }
 
     /**
-     * Metoda tworzy katalog, w ktorym beda przechowywane pliki stworzone przez program.
-     * @param file plik, w ktorym zapisana jest sciezka do katalogu
-     * @return sciezka do stworzonego katalogu
+     * Metoda tworzy katalog, w którym będą przechowywane pliki stworzone przez program.
+     * @param file plik, w którym zapisana jest ścieżka do katalogu
+     * @return ścieżka do stworzonego katalogu
      */
     public static String readFile(String file) {
         BufferedReader br;
