@@ -26,6 +26,7 @@ public class FileOperations {
 
     /**
      * Metoda tworzy katalog, w którym będą przechowywane pliki stworzone przez program.
+     *
      * @param file plik, w którym zapisana jest ścieżka do katalogu
      * @return ścieżka do stworzonego katalogu
      */
@@ -55,6 +56,4 @@ public class FileOperations {
             return path;
         }
     }
-
-
 }

@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/slf4j-api-1.7.25.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/slf4j-simple-1.7.25.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keyListener.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rwilk/mediaplayer/MediaBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rwilk/mediaplayer/Player.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rwilk/mediaplayer/VideoPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rwilk/view/AlertBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jnativehook_2_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jnativehook_2_1_0.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/keyListener.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image.txt" afterPath="$PROJECT_DIR$/image.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/logger/GlobalMouseWheelListener.java" afterPath="$PROJECT_DIR$/src/rwilk/logger/GlobalMouseWheelListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/logger/RegisterNativeHook.java" afterPath="$PROJECT_DIR$/src/rwilk/logger/RegisterNativeHook.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/logic/CaptureAudio.java" afterPath="$PROJECT_DIR$/src/rwilk/logic/CaptureAudio.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/logic/CaptureScreen.java" afterPath="$PROJECT_DIR$/src/rwilk/logic/CaptureScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/logic/FileOperations.java" afterPath="$PROJECT_DIR$/src/rwilk/logic/FileOperations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/logic/HardwareInfo.java" afterPath="$PROJECT_DIR$/src/rwilk/logic/HardwareInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/mediaplayer/MediaBar.java" afterPath="$PROJECT_DIR$/src/rwilk/mediaplayer/MediaBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/mediaplayer/Player.java" afterPath="$PROJECT_DIR$/src/rwilk/mediaplayer/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/mediaplayer/VideoPlayer.java" afterPath="$PROJECT_DIR$/src/rwilk/mediaplayer/VideoPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/view/AboutWindow.java" afterPath="$PROJECT_DIR$/src/rwilk/view/AboutWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/view/AlertBox.java" afterPath="$PROJECT_DIR$/src/rwilk/view/AlertBox.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/view/ImageSettings.java" afterPath="$PROJECT_DIR$/src/rwilk/view/ImageSettings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/view/Main.java" afterPath="$PROJECT_DIR$/src/rwilk/view/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rwilk/view/VideoSettings.java" afterPath="$PROJECT_DIR$/src/rwilk/view/VideoSettings.java" />
@@ -78,30 +81,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/rwilk/view/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rwilk/mediaplayer/VideoPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MediaBar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rwilk/mediaplayer/MediaBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="99" column="61" lean-forward="true" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
+            <state relative-caret-position="2261">
+              <caret line="133" column="36" lean-forward="false" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +93,8 @@
       <file leaf-file-name="ImageSettings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rwilk/view/ImageSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="425">
+              <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,21 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileOperations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rwilk/logic/FileOperations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="VideoSettings.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rwilk/view/VideoSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="100" column="89" lean-forward="true" selection-start-line="100" selection-start-column="89" selection-end-line="100" selection-end-column="89" />
+            <state relative-caret-position="374">
+              <caret line="91" column="28" lean-forward="true" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,21 +145,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/rwilk/logic/InfoAboutHardware.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/logic/CaptureAudio.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/logger/GlobalMouseListener.java" />
         <option value="$PROJECT_DIR$/src/rwilk/logger/GlobalKeyListener.java" />
         <option value="$PROJECT_DIR$/src/rwilk/logger/GlobalMouseWheelListener.java" />
         <option value="$PROJECT_DIR$/src/rwilk/logger/RegisterNativeHook.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/logic/HardwareInfo.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/view/AboutWindow.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/logic/CaptureAudio.java" />
         <option value="$PROJECT_DIR$/src/rwilk/logic/CaptureScreen.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/mediaplayer/Player.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/view/AlertBox.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/logger/GlobalMouseListener.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/view/ImageSettings.java" />
-        <option value="$PROJECT_DIR$/src/rwilk/view/VideoSettings.java" />
         <option value="$PROJECT_DIR$/src/rwilk/logic/FileOperations.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/logic/HardwareInfo.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/mediaplayer/MediaBar.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/mediaplayer/Player.java" />
         <option value="$PROJECT_DIR$/src/rwilk/mediaplayer/VideoPlayer.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/view/AboutWindow.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/view/AlertBox.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/view/ImageSettings.java" />
         <option value="$PROJECT_DIR$/src/rwilk/view/Main.java" />
+        <option value="$PROJECT_DIR$/src/rwilk/view/VideoSettings.java" />
       </list>
     </option>
   </component>
@@ -831,7 +803,7 @@
       <workItem from="1497105412528" duration="29000" />
       <workItem from="1497126917982" duration="309000" />
       <workItem from="1497127235725" duration="841000" />
-      <workItem from="1497287197613" duration="2436000" />
+      <workItem from="1497287197613" duration="4105000" />
     </task>
     <task id="LOCAL-00001" summary="Commit prosto z IntelliJ - test 1.">
       <created>1496995419814</created>
@@ -875,11 +847,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497127291023</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Odtwarzacz video. Zapis zdjęć i filmów do różnych katalogów. Poprawiono błędy.">
+      <created>1497289764299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1497289764299</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15338000" />
+    <option name="totallyTimeSpent" value="17007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -895,12 +874,12 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20953101" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -935,7 +914,8 @@
     <MESSAGE value="Nagrywanie obrazu" />
     <MESSAGE value="Nagrywanie obrazu v2" />
     <MESSAGE value="Nagrywanie obrazu v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nagrywanie obrazu v3" />
+    <MESSAGE value="Odtwarzacz video. Zapis zdjęć i filmów do różnych katalogów. Poprawiono błędy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Odtwarzacz video. Zapis zdjęć i filmów do różnych katalogów. Poprawiono błędy." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1193,78 +1173,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/CaptureAudio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/HardwareInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/view/AboutWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rwilk/view/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/view/AlertBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalKeyListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalMouseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" column="57" lean-forward="false" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalMouseWheelListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1276,72 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/CaptureScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2228">
-          <caret line="153" column="32" lean-forward="true" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/view/VideoSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="100" column="89" lean-forward="true" selection-start-line="100" selection-start-column="89" selection-end-line="100" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/view/ImageSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/FileOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/RegisterNativeHook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="94" lean-forward="false" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/mediaplayer/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rwilk/mediaplayer/MediaBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="99" column="61" lean-forward="true" selection-start-line="99" selection-start-column="61" selection-end-line="99" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/video.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1350,18 +1197,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalKeyListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalMouseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="58" column="57" lean-forward="false" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalMouseWheelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logger/RegisterNativeHook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="85" lean-forward="false" selection-start-line="27" selection-start-column="85" selection-end-line="27" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/CaptureAudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/CaptureScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1972">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/FileOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/mediaplayer/MediaBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-782">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/logic/HardwareInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/mediaplayer/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rwilk/mediaplayer/VideoPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="132" column="1" lean-forward="true" selection-start-line="132" selection-start-column="1" selection-end-line="132" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/view/AboutWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="5" lean-forward="false" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/view/AlertBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/view/ImageSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rwilk/view/VideoSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="91" column="28" lean-forward="true" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rwilk/view/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="28" lean-forward="true" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+        <state relative-caret-position="2261">
+          <caret line="133" column="36" lean-forward="false" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

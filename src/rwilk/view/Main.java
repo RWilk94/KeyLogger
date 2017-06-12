@@ -45,13 +45,13 @@ public class Main extends Application implements ActionListener {
 
     /**
      * Metoda buduje graficzne okno aplikacji.
+     *
      * @param primaryStage główne okno aplikacji.
      */
     @Override
     public void start(Stage primaryStage) {
         window = primaryStage;
         window.setTitle("KeyLogger");
-
         Platform.setImplicitExit(false);// instructs the javafx system not to exit implicitly when the last application window is shut.
         javax.swing.SwingUtilities.invokeLater(this::addAppToTray);// sets up the tray icon (using awt code run on the swing thread).
 
@@ -69,14 +69,13 @@ public class Main extends Application implements ActionListener {
         MenuItem videosSettings = new MenuItem("Video Settings");
         MenuItem imagesSettings = new MenuItem("Images Settings");
         CheckMenuItem recordAudio = new CheckMenuItem("Record Audio");
-        recordAudio.setOnAction( e -> {
+        recordAudio.setOnAction(e -> {
             CaptureAudio.recordAudio = recordAudio.isSelected();
         });
         recordAudio.setSelected(false);
         videosSettings.setOnAction(e -> VideoSettings.display());
         imagesSettings.setOnAction(e -> ImageSettings.display());
         settingsMenu.getItems().addAll(videosSettings, imagesSettings, recordAudio);
-
         Menu aboutMenu = new Menu("About");
         MenuItem about = new MenuItem("About");
         about.setOnAction(e -> {
@@ -96,20 +95,17 @@ public class Main extends Application implements ActionListener {
         stopRecording.setOnAction(e -> new Thread(this::stopRecording).start());
 
         Button videoPlayer = new Button("Video Player");
-
-        videoPlayer.setOnAction( e -> {
+        videoPlayer.setOnAction(e -> {
             String pathToVideo = FileOperations.readFile("video.txt", "C:\\KeyLoggerVideo");
             pathToVideo = pathToVideo.replace("\\", "/");
             System.out.println(pathToVideo);
             VideoPlayer.display(pathToVideo);
             stopRecording();
         });
-
         HBox hBox = new HBox(10);
         hBox.setPadding(new Insets(10, 10, 10, 10));
         hBox.getChildren().addAll(startRecording, stopRecording, videoPlayer);
         borderPane.setCenter(hBox);
-
         Scene scene = new Scene(borderPane, 400, 400);
         scene.getStylesheets().add("rwilk/view/style.css");
         window.setScene(scene);
@@ -175,6 +171,7 @@ public class Main extends Application implements ActionListener {
 
     /**
      * Metoda obsługująca słuchacza zdarzeń.
+     *
      * @param e zdarzenie od słuchacza zdarzeń.
      */
     @Override
@@ -229,11 +226,11 @@ public class Main extends Application implements ActionListener {
 
     /**
      * Metoda main uruchamia okno aplikacji.
+     *
      * @param args argumenty metody main
      */
     public static void main(String[] args) {
         RegisterNativeHook.registerNativeHook(); //uruchamia przechwytywanie keyloggera
         launch(args);      //uruchamia okno
     }
-
 }

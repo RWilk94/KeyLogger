@@ -23,7 +23,6 @@ import rwilk.view.Main;
 public class CaptureScreen implements ActionListener {
 
     public boolean running = false;
-
     private Robot robot;
     private Rectangle capBounds;
     private IMediaWriter writer;
@@ -95,6 +94,7 @@ public class CaptureScreen implements ActionListener {
 
     /**
      * Słuchacz zdarzeń.
+     *
      * @param e zdarzenie od słuchacza zdarzeń.
      */
     @Override
@@ -127,6 +127,7 @@ public class CaptureScreen implements ActionListener {
 
     /**
      * Metoda zamienia tablice typu byte na tablicę typu short.
+     *
      * @param b tablica typu byte
      * @return tablica typu short
      */
@@ -140,6 +141,7 @@ public class CaptureScreen implements ActionListener {
     /**
      * Metoda robi screenshot ekranu i dodaje go jako kolejną klatkę do filmu.
      * Metoda dodaje ikonkę kursora myszki.
+     *
      * @return zdjęcie (screenshot) ekranu
      */
     private BufferedImage getCaptureImage() {

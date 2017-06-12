@@ -34,9 +34,7 @@ public class ImageSettings {
         window.setTitle("Images Settings");
         window.setMinWidth(400);
         window.setMinHeight(100);
-
         path.setText(FileOperations.readFile("image.txt", "C:\\KeyLoggerImage"));
-
         browse.setOnAction(e -> pathImageChosen());
 
         GridPane gridPane = new GridPane();
@@ -46,13 +44,11 @@ public class ImageSettings {
         GridPane.setConstraints(info, 0, 0);
         GridPane.setConstraints(path, 1, 0);
         GridPane.setConstraints(browse, 2, 0);
-
         gridPane.getChildren().addAll(info, path, browse);
-
         path.setDisable(true);
         path.setPrefWidth(path.getText().length() * 7);
-        Scene scene = new Scene(gridPane, 400, 100);
 
+        Scene scene = new Scene(gridPane, 400, 100);
         window.setScene(scene);
         window.showAndWait();
     }
@@ -79,9 +75,10 @@ public class ImageSettings {
 
     /**
      * Metoda wczytuje z pliku scieżkę, gdzie zapisujemy screenshoty.
+     *
      * @return ścieżka do katalogu, gdzie program zapisuje screenshoty.
      */
-    public static String readFile(){
+    public static String readFile() {
         String pathFromFile = FileOperations.readFile("image.txt", "C:\\KeyLoggerImage");
         path.setText(pathFromFile);
         return path.getText();

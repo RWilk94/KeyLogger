@@ -28,16 +28,16 @@ public class GlobalMouseWheelListener implements NativeMouseWheelListener {
      */
     public void nativeMouseWheelMoved(NativeMouseWheelEvent e) {
         Calendar calendar = Calendar.getInstance();
-            try {
-                Date date =  calendar.getTime();
-                Rectangle screenRect = new Rectangle(0, 0, 0, 0);
-                for (GraphicsDevice gd : GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()) {
-                    screenRect = screenRect.union(gd.getDefaultConfiguration().getBounds());
-                }
-                BufferedImage capture = new Robot().createScreenCapture(screenRect);
-                ImageIO.write(capture, "JPG", new File(ImageSettings.readFile() + "\\" + dateFormatForPath.format(date) + "scroll" + ".jpg"));
-            }catch (Exception ex){
-                ex.printStackTrace();
+        try {
+            Date date = calendar.getTime();
+            Rectangle screenRect = new Rectangle(0, 0, 0, 0);
+            for (GraphicsDevice gd : GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices()) {
+                screenRect = screenRect.union(gd.getDefaultConfiguration().getBounds());
             }
+            BufferedImage capture = new Robot().createScreenCapture(screenRect);
+            ImageIO.write(capture, "JPG", new File(ImageSettings.readFile() + "\\" + dateFormatForPath.format(date) + "scroll" + ".jpg"));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }

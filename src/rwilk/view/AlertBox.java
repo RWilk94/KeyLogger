@@ -11,12 +11,17 @@ import javafx.stage.Stage;
 
 
 /**
- * Created by wilkr on 27.04.2017.
- * AlertBox
+ * Created by Rafał Wilk
  */
 public class AlertBox {
 
-    public static void display(String title, String message){
+    /**
+     * Metoda wyświetla graficzne okienko typu alert box.
+     *
+     * @param title   tytuł komunikatu alert box
+     * @param message treść komunikatu alert box
+     */
+    public static void display(String title, String message) {
         Stage window = new Stage();
 
         window.initModality(Modality.APPLICATION_MODAL);
@@ -31,7 +36,7 @@ public class AlertBox {
         VBox layout = new VBox(10);
         layout.getChildren().addAll(label, closeButton);
         layout.setAlignment(Pos.CENTER);
-        layout.setPadding(new Insets(10,10,10, 10));
+        layout.setPadding(new Insets(10, 10, 10, 10));
 
         Scene scene = new Scene(layout);
         window.setScene(scene);

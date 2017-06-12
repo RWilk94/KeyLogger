@@ -52,7 +52,6 @@ public class CaptureAudio implements Runnable {
         TargetDataLine line = null;
         running = true;
         capture = true;
-
         try {
             line = (TargetDataLine) AudioSystem.getLine(info);
             byte[] buffer = new byte[400];

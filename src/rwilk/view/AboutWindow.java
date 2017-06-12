@@ -19,29 +19,19 @@ import java.io.File;
  */
 public class AboutWindow {
 
-
-    public static void display(){
+    /**
+     * Metoda wyświetla graficzne okno, w którym pokazane są informacje o sprzęcie i oprogramowaniu użytkownika.
+     */
+    public static void display() {
 
         Stage window = new Stage();
-
         HardwareInfo hardwareInfo = new HardwareInfo();
-
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle("Photo Album");
         window.setMinWidth(400);
         window.setMinHeight(100);
-
-
         VBox vbox = new VBox(8);
-
         vbox.setPadding(new Insets(10));
-        //Label label = new Label("Logs from keyboard:");
-        //label.setFont(Font.font("Calibri", 22));
-
-        //String keylogger = ReadKeyLogger.readKeyLogger();
-
-        //Text text = new Text(keylogger);
-        //text.setFont(Font.font("Calibri", 12));
 
         TextField myIpAddressT = new TextField();
         Label myIpAddressL = new Label("Your public IP address: ");
@@ -70,51 +60,36 @@ public class AboutWindow {
 
         Label discsL = new Label("Info about your discs: ");
         File[] roots = File.listRoots();
-
         String infoAboutDiscs = "";
-
         Text discsT = new Text();
         for (File root : roots) {
-            infoAboutDiscs += "File system root: " + root.getAbsolutePath() +"\n";
-            infoAboutDiscs += "Total space (GB): " + root.getTotalSpace()/hardwareInfo.GIGA_BYTES  + "\n";
-            infoAboutDiscs += "Free space (GB): " + root.getFreeSpace()/hardwareInfo.GIGA_BYTES + "\n\n";
+            infoAboutDiscs += "File system root: " + root.getAbsolutePath() + "\n";
+            infoAboutDiscs += "Total space (GB): " + root.getTotalSpace() / hardwareInfo.GIGA_BYTES + "\n";
+            infoAboutDiscs += "Free space (GB): " + root.getFreeSpace() / hardwareInfo.GIGA_BYTES + "\n\n";
         }
         discsT.setText(infoAboutDiscs);
-
 
         GridPane gridPane = new GridPane();
         gridPane.setPadding(new Insets(10));
         GridPane.setConstraints(myIpAddressL, 0, 0);
         GridPane.setConstraints(myIpAddressT, 1, 0);
-
         GridPane.setConstraints(osNameL, 0, 1);
         GridPane.setConstraints(osNameT, 1, 1);
-
         GridPane.setConstraints(osVersionL, 0, 2);
         GridPane.setConstraints(osVersionT, 1, 2);
-
         GridPane.setConstraints(osArchitectureL, 0, 3);
         GridPane.setConstraints(osArchitectureT, 1, 3);
-
         GridPane.setConstraints(ramL, 0, 4);
         GridPane.setConstraints(ramT, 1, 4);
-
         GridPane.setConstraints(discsL, 0, 5);
         GridPane.setConstraints(discsT, 1, 5);
-
         gridPane.getChildren().addAll(myIpAddressL, myIpAddressT, osNameL, osNameT, osVersionL, osVersionT,
                 osArchitectureL, osArchitectureT, ramL, ramT, discsL, discsT);
-
-
         vbox.getChildren().addAll(gridPane);
-        //vbox.getChildren().add(text);
-
         ScrollPane sp = new ScrollPane();
         sp.setContent(vbox);
-
         Scene scene = new Scene(sp, 400, 400);
         window.setScene(scene);
         window.showAndWait();
     }
-
 }

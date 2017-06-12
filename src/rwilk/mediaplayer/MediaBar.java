@@ -20,45 +20,42 @@ public class MediaBar extends HBox implements ActionListener {
 
     private Slider time = new Slider();
     private Slider vol = new Slider();
-
     private Button playButton = new Button("||");
     private Label volume = new Label("Volume: ");
-
     private MediaPlayer player;
-
     private Timer timer = new Timer(500, this);
 
-    public MediaBar(MediaPlayer play){
+    /**
+     * Metoda odpowiada za graficzne zbudowanie i obsługę przycisków w dolnym pasku odtwarzacza video.
+     * Obsługuje przyciski: play, pause, pasek postępu filmu, pasek głośności.
+     *
+     * @param play
+     */
+    public MediaBar(MediaPlayer play) {
         System.out.println("Player = play");
         player = play;
         timer.start();
         setAlignment(Pos.CENTER);
-        setPadding(new Insets(5,10,5,10));
-
+        setPadding(new Insets(5, 10, 5, 10));
         vol.setPrefWidth(70);
         vol.setMinWidth(30);
         vol.setValue(100);
-
         HBox.setHgrow(time, Priority.ALWAYS);
-
         playButton.setPrefWidth(30);
-
         getChildren().addAll(playButton, time, volume, vol);
 
-
-        playButton.setOnAction( e -> {
+        playButton.setOnAction(e -> {
             Status status = player.getStatus();
-            if(status == Status.PLAYING){
-                if(player.getCurrentTime().greaterThanOrEqualTo(player.getTotalDuration())){
+            if (status == Status.PLAYING) {
+                if (player.getCurrentTime().greaterThanOrEqualTo(player.getTotalDuration())) {
                     player.seek(player.getStartTime());
                     player.play();
-                }
-                else {
+                } else {
                     player.pause();
                     playButton.setText(">");
                 }
             }
-            if(status == Status.PAUSED || status == Status.HALTED || status == Status.STOPPED){
+            if (status == Status.PAUSED || status == Status.HALTED || status == Status.STOPPED) {
                 player.play();
                 playButton.setText("||");
             }
@@ -67,57 +64,41 @@ public class MediaBar extends HBox implements ActionListener {
         player.currentTimeProperty().addListener(observable -> updateValue());
 
         time.valueProperty().addListener(observable -> {
-            if(time.isPressed()){
-                player.seek(player.getMedia().getDuration().multiply(time.getValue()/100));
+            if (time.isPressed()) {
+                player.seek(player.getMedia().getDuration().multiply(time.getValue() / 100));
             }
         });
 
         vol.valueProperty().addListener(observable -> {
-            if(vol.isPressed()){
-                player.setVolume(vol.getValue()/100);
+            if (vol.isPressed()) {
+                player.setVolume(vol.getValue() / 100);
             }
         });
-
     }
 
-    private void updateValue(){
-        Platform.runLater(() -> time.setValue(player.getCurrentTime().toMillis()/player.getTotalDuration().toMillis()*100));
+    /**
+     * Metoda aktualizuje pasek pokazujący postęp filmu.
+     */
+    private void updateValue() {
+        Platform.runLater(() -> time.setValue(player.getCurrentTime().toMillis() / player.getTotalDuration().toMillis() * 100));
     }
 
     public static boolean change = false;
 
-
-    private Timer timer2 = new Timer(500, this);
-
+    /**
+     * Metoda obsłuchuje zdarzenia od słuchacza zdarzeń.
+     *
+     * @param e zdarzenie od słuchacza zdarzeń.
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
-        //System.out.println("Test time: " + time.getValue());
-        //System.out.println(player.getCurrentTime().toMillis() +" + "+ player.getTotalDuration().toMillis());
-        //System.out.println(player.getTotalDuration().toMillis());
-        //System.out.println(player.getStatus());
-        if (e.getSource() == timer && player.getCurrentTime().toMillis() == player.getTotalDuration().toMillis() ){
-            //System.out.println("Timer 1");
+        if (e.getSource() == timer && player.getCurrentTime().toMillis() == player.getTotalDuration().toMillis()) {
             VideoPlayer.display(VideoPlayer.pathToDirectory);
             change = true;
             timer.stop();
-            //System.out.println("Time " + time.getValue());
             player.stop();
             player.seek(player.getStartTime());
             player.play();
-            //player.seek(0);
-            //System.out.println("Player seek");
-            //System.out.println(player.getCurrentTime().toMillis());
-            //player = new Player()
         }
-
-        /*if (e.getSource() == timer2 && change && player.getCurrentTime().toMillis() < player.getTotalDuration().toMillis()){
-            System.out.println("Timer 2");
-            change = false;
-            timer.start();
-        }*/
-
-        //else if (change){
-          //  change = false;
-        //}
     }
 }

@@ -33,14 +33,11 @@ public class VideoSettings  {
      */
     public static void display(){
         window = new Stage();
-
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle("Video Settings");
         window.setMinWidth(400);
         window.setMinHeight(100);
-
         browse.setOnAction(e -> pathChosen());
-
         GridPane gridPane = new GridPane();
         gridPane.setPadding(new Insets(10,10,10,10));
         gridPane.setHgap(10);
@@ -60,13 +57,10 @@ public class VideoSettings  {
         choiceBox.getSelectionModel().select(CaptureScreen.durationInMinutes);
         choiceBox.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> CaptureScreen.durationInMinutes = newValue);
         GridPane.setConstraints(choiceBox, 2, 1);
-
         gridPane.getChildren().addAll(info, path, browse, duration, choiceBox, minutes);
-
         path.setDisable(true);
         path.setPrefWidth(path.getText().length() * 7);
         Scene scene = new Scene(gridPane, 400, 100);
-
         window.setScene(scene);
         window.showAndWait();
     }
@@ -85,11 +79,9 @@ public class VideoSettings  {
             String filePath = selectedDirectory.getAbsolutePath();
             path.setText(filePath);
             path.setPrefWidth(path.getText().length() * 7);
-            //writeToFile(filePath);
             FileOperations.writeToFile("video.txt", filePath);
         } catch (NullPointerException nex) {
             System.out.println("VideoSettings + pathChosen = ERROR");
-            //logger.error("Main + pathChosen ");
         }
     }
 
@@ -102,5 +94,4 @@ public class VideoSettings  {
         path.setText(pathFromFile);
         return path.getText();
     }
-
 }
