@@ -34,6 +34,8 @@ public class VideoPlayer {
     /**
      * Odpowiednik metody start(). Budujemy graficzne okno odtwarzacza video.
      * Automatycznie zaczynamy odtwarzac pierwszy film z folderu.
+     *
+     * @param pathToDirectory ścieżka do katalogu, z którego mamy odtwarzać filmy.
      */
     public static void display(String pathToDirectory) {
         if (player != null)

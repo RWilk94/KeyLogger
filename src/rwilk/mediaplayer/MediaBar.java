@@ -29,7 +29,7 @@ public class MediaBar extends HBox implements ActionListener {
      * Metoda odpowiada za graficzne zbudowanie i obsługę przycisków w dolnym pasku odtwarzacza video.
      * Obsługuje przyciski: play, pause, pasek postępu filmu, pasek głośności.
      *
-     * @param play
+     * @param play odtwarzacz video, w którym umieszczamy belkę z przyciskami odtwarzacza
      */
     public MediaBar(MediaPlayer play) {
         System.out.println("Player = play");

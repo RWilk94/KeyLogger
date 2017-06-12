@@ -28,6 +28,7 @@ public class FileOperations {
      * Metoda tworzy katalog, w którym będą przechowywane pliki stworzone przez program.
      *
      * @param file plik, w którym zapisana jest ścieżka do katalogu
+     * @param path ścieżka do katalogu z filmami, jeśli katalog nie istnieje to zostanie stworzony
      * @return ścieżka do stworzonego katalogu
      */
     public static String readFile(String file, String path) {
