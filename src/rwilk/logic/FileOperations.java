@@ -29,9 +29,8 @@ public class FileOperations {
      * @param file plik, w którym zapisana jest ścieżka do katalogu
      * @return ścieżka do stworzonego katalogu
      */
-    public static String readFile(String file) {
+    public static String readFile(String file, String path) {
         BufferedReader br;
-        String path = "";
         try {
             br = new BufferedReader(new FileReader(file));
             try {
@@ -44,7 +43,7 @@ public class FileOperations {
         } catch (FileNotFoundException e) {
             System.out.println(e);
 
-            File folder = new File("C:\\KeyLogger");
+            File folder = new File(path);
             if (!folder.exists()) {
                 if (folder.mkdir()) {
                     System.out.println("Directory is created!");
@@ -52,8 +51,8 @@ public class FileOperations {
                     System.out.println("Failed to create directory!");
                 }
             }
-            writeToFile(file, "C:\\KeyLogger");
-            return "C:\\KeyLogger";
+            writeToFile(file, path);
+            return path;
         }
     }
 

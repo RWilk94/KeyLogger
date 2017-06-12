@@ -98,7 +98,7 @@ public class VideoSettings  {
      * @return ścieżka do katalogu, gdzie program zapisuje filmy.
      */
     public static String readFile(){
-        String pathFromFile = FileOperations.readFile("video.txt");
+        String pathFromFile = FileOperations.readFile("video.txt", "C:\\KeyLoggerVideo");
         path.setText(pathFromFile);
         return path.getText();
     }

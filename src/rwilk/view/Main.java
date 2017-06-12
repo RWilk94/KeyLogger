@@ -18,6 +18,8 @@ import org.jnativehook.NativeHookException;
 import rwilk.logger.RegisterNativeHook;
 import rwilk.logic.CaptureAudio;
 import rwilk.logic.CaptureScreen;
+import rwilk.logic.FileOperations;
+import rwilk.mediaplayer.VideoPlayer;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -93,9 +95,19 @@ public class Main extends Application implements ActionListener {
         startRecording.setOnAction(e -> new Thread(this::startRecording).start());
         stopRecording.setOnAction(e -> new Thread(this::stopRecording).start());
 
+        Button videoPlayer = new Button("Video Player");
+
+        videoPlayer.setOnAction( e -> {
+            String pathToVideo = FileOperations.readFile("video.txt", "C:\\KeyLoggerVideo");
+            pathToVideo = pathToVideo.replace("\\", "/");
+            System.out.println(pathToVideo);
+            VideoPlayer.display(pathToVideo);
+            stopRecording();
+        });
+
         HBox hBox = new HBox(10);
         hBox.setPadding(new Insets(10, 10, 10, 10));
-        hBox.getChildren().addAll(startRecording, stopRecording);
+        hBox.getChildren().addAll(startRecording, stopRecording, videoPlayer);
         borderPane.setCenter(hBox);
 
         Scene scene = new Scene(borderPane, 400, 400);
@@ -125,9 +137,7 @@ public class Main extends Application implements ActionListener {
     private static void launchRecording() {
         String path = VideoSettings.readFile();
         int width = 0;
-        int height;
-        width += (int) Screen.getScreens().get(0).getVisualBounds().getWidth();
-        height = (int) Screen.getScreens().get(0).getVisualBounds().getHeight();
+        int height = 0;
         for (int i = 0; i < Screen.getScreens().size(); i++) {
             width += (int) Screen.getScreens().get(i).getVisualBounds().getWidth();
             if ((int) Screen.getScreens().get(i).getVisualBounds().getHeight() > height)

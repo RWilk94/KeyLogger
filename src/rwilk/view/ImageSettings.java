@@ -35,7 +35,7 @@ public class ImageSettings {
         window.setMinWidth(400);
         window.setMinHeight(100);
 
-        path.setText(FileOperations.readFile("image.txt"));
+        path.setText(FileOperations.readFile("image.txt", "C:\\KeyLoggerImage"));
 
         browse.setOnAction(e -> pathImageChosen());
 
@@ -82,7 +82,7 @@ public class ImageSettings {
      * @return ścieżka do katalogu, gdzie program zapisuje screenshoty.
      */
     public static String readFile(){
-        String pathFromFile = FileOperations.readFile("image.txt");
+        String pathFromFile = FileOperations.readFile("image.txt", "C:\\KeyLoggerImage");
         path.setText(pathFromFile);
         return path.getText();
     }
