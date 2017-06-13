@@ -5,8 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/KeyLogger_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-10.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-11.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-12.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-13.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-14.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index-files/index-9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/overview-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/overview-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logger/GlobalKeyListener.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logger/GlobalMouseListener.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logger/GlobalMouseWheelListener.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logger/RegisterNativeHook.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logger/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logger/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logger/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logic/CaptureAudio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logic/CaptureScreen.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logic/FileOperations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logic/HardwareInfo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logic/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logic/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/logic/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/mediaplayer/MediaBar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/mediaplayer/Player.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/mediaplayer/VideoPlayer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/mediaplayer/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/mediaplayer/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/mediaplayer/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/AboutWindow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/AlertBox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/ImageSettings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/Main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/VideoSettings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/rwilk/view/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/KeyLogger dokumentacja/stylesheet.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -115,8 +167,8 @@
       <file leaf-file-name="GlobalMouseWheelListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalMouseWheelListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state relative-caret-position="326">
+              <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -839,7 +891,7 @@
       <workItem from="1497297170576" duration="388000" />
       <workItem from="1497298427865" duration="715000" />
       <workItem from="1497300187620" duration="574000" />
-      <workItem from="1497349160569" duration="89000" />
+      <workItem from="1497349160569" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="Commit prosto z IntelliJ - test 1.">
       <created>1496995419814</created>
@@ -904,11 +956,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497292595618</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finalna wersja projektu v2">
+      <created>1497349294422</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1497349294422</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20418000" />
+    <option name="totallyTimeSpent" value="20932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -968,7 +1027,8 @@
     <MESSAGE value="Odtwarzacz video. Zapis zdjęć i filmów do różnych katalogów. Poprawiono błędy." />
     <MESSAGE value="Ostatnie zmiany, dodanie komentarzy, formatowanie kodu." />
     <MESSAGE value="Finalna wersja projektu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalna wersja projektu." />
+    <MESSAGE value="Finalna wersja projektu v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalna wersja projektu v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1301,8 +1361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rwilk/logger/GlobalMouseWheelListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="326">
+          <caret line="36" column="49" lean-forward="false" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
           <folding />
         </state>
       </provider>
